@@ -1,1 +1,1 @@
-ip addr | find . 
+ifconfig | grep "ether" | awk '{print $2}'
